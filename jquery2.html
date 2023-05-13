@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <h1 id="h1">Lorem, ipsum.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>Quia, quidem minus!</b>  Praesentium iusto reiciendis accusantium illum maxime voluptates quos sequi!</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span style="background-color: goldenrod;">Ex ducimus commodi mollitia quam nesciunt!</span>  Aut fugit, praesentium reprehenderit tempore deserunt atque minima, eius dicta porro, omnis dolor reiciendis. Quidem, perferendis.</p>
+    </div>
+
+    <div>
+        <input type="text" name="Adi" id="Name" value="Kerem Tay">
+    </div>
+    <br>
+
+    <a href="https://www.google.com.tr"></a>
+    <br>
+
+    <div id="div1">
+        <h1 id="baslik1"></h1>
+    </div>
+
+    <div id="div2">
+
+    </div>
+
+    <button id="btn1">Buton</button>
+    <br><br>
+    <button id="btn2">Buton2</button>
+    <br><br>
+    <button id="btn3">Buton3</button>
+
+    <script>
+        $(document).ready(function(){
+
+            // ******* Get Metotları ********
+
+            // text(), html()
+
+            // $("#btn1").click(function(){
+            //     alert($("div").html());
+            // });
+
+            // val() metodu ile verilerin elde edilmesi
+
+            // $("#btn2").click(function(){
+            //     alert($("#Name").val());
+            // });
+
+            // attr() metodu: 
+
+            // $("#btn2").click(function(){
+            //     alert($("a").attr("href"));
+            // });
+
+            // ******** Set Metotları ********
+
+                $("#btn2").click(function(){
+                    $("#baslik1").text("Network Akademi");
+                });
+
+                $("#btn3").click(function(){
+                    $("#div2").html("<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>Quia, quidem minus!</b>  Praesentium iusto reiciendis accusantiadipisicing elit. <span>Ex ducimus commodi mollitia quam nesciunt!</span>  Aut fugit</p>");
+                    $("span").attr("style", "background-color: red;");
+                });
+
+        });
+
+
+    </script>
+</body>
+</html>

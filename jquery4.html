@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+    <style>
+        .mavi{
+            background-color: blue;
+            height: 100px;
+        }
+        .sari{
+            background-color: yellow;
+            height: 100px;
+            width: 500px;
+        }
+        .kalin{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+  <div id="div1">
+    <h1>Network Akademi</h1>
+    <p id="p1" class="mavi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rem quibusdam consectetur debitis mollitia modi harum voluptatum libero corporis fuga quod voluptatem blanditiis ex laborum porro, hic rerum deleniti veritatis.</p>
+  </div>
+
+  <br>
+
+  <div id="div2">
+    <h3>Lorem, ipsum dolor.</h3>
+    <p id="p2" class="sari kalin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque asperiores voluptas temporibus earum optio vel maiores natus aperiam, deleniti nulla!</p>
+  </div>
+
+    <button id="btn1">Mavi</button>
+
+    <button id="btn2">Sari</button>
+
+    <script>
+
+        $(document).ready(function(){
+            // $("#btn1").click(function(){
+            //     $("#p1").addClass("mavi");
+            // });
+
+            // $("#btn2").click(function(){
+            //     $("#p2").addClass("sari");
+            //     $("#p2").addClass("kalin");
+            // });     
+            
+            // removeClass("class_Adi")
+
+            $("#btn1").click(function(){
+                $("#p1").removeClass("mavi");
+            });
+            $("#btn2").click(function(){
+                $("#p2").removeClass("sari");
+            });
+            
+        });
+
+    </script>
+
+</body>
+</html>

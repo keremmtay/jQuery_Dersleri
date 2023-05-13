@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- $: Jquery metodlarını kullanmak istiyorsak script tag'i için js kodlarımızı yazmaya başlamadan önce $ işaretini kullanmamız gerekiyor.
+    
+        syntax: $(selector).action()
+
+        $("p").click()
+
+        $(".test").hide()
+
+        $(document).ready(function() {
+            Jquery kodlarımızı buraya yazıyoruz
+        });
+    -->
+
+    <h1 class="class1" style="display: inline;">Lorem, ipsum dolor.</h1>
+    <p id="p1" class="class1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor beatae quam non doloremque temporibus voluptate iusto provident labore laboriosam repellat.</p>
+    <h1>Lorem ipsum dolor sit.</h1>
+    <p id="p2" class="class2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, cum.</p>
+    <p id="p3">Lorem ipsum dolor sit amet.</p>
+
+
+    <div class="div1" style="background-color: burlywood; height: 200px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam sunt consectetur laboriosam. Minima accusantium eos delectus ad, sit natus reprehenderit.</div>
+
+
+    <button id="gizle">Gizle</button>
+    <button id="goster">Göster</button>
+    <button id="btn1">SlideToggle</button>
+
+    <br><hr>
+
+    <button id="btn2">Animate</button>
+
+    <div id="div2" style="width: 100px; height: 100px; background-color: red; position: absolute;"></div>
+
+
+
+
+
+    <script>
+
+        // tag/etiket ismi kullanarak seçtik.
+
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         $("h1").hide();
+        //     });
+        // });
+
+        // id kullanarak ilgili elemanları seçelim.
+
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         $("#p1").hide();
+        //     });
+        // });
+
+        // class ismi ile eleman seçelim
+
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         $(".class1").hide();
+        //     });
+        // });
+
+
+        // this anahtar sözcüğü ile click işlemini yaptığımız h1 tag'i ifade edilmektedir.
+
+        // $(document).ready(function(){
+        //     $("h1").click(function(){
+        //         $(this).hide();
+        //     });
+        // });
+
+
+
+        // Event : click, double click, mouseenter, mouseleave, load, change, focus...
+
+        // $(document).ready(function(){
+        //     $("h1").dblclick(function(){
+        //         $("p").hide();
+        //     });
+        // });
+
+        // mouseenter : mouse ile üzerine geldiğimizde ilgili Jquery kodu tetikleniyor.
+        
+        // $(document).ready(function(){
+        //     $("h1").mouseenter(function(){
+        //         alert("mouseenter çalıştı");
+        //     });
+        // });
+
+        // $(document).ready(function(){
+        //     $("h1").mouseleave(function(){
+        //         alert("mouseleave çalıştı");
+        //     });
+        // });
+
+        // $(document).ready(function(){
+        //     $("#gizle").click(function(){
+        //         $(".div1").hide(3000);
+        //     });
+
+        //     $("#goster").click(function(){
+        //         $(".div1").show(2000);
+        //     });
+        // });
+
+        // slideDown(), slideUp(), slideToggle(),
+
+        // $(document).ready(function(){
+        //     $("#gizle").click(function(){
+        //         $(".div1").slideUp();
+        //     });
+
+        //     $("#goster").click(function(){
+        //         $(".div1").slideDown();
+        //     });
+        //     $("#btn1").click(function(){
+        //         $(".div1").slideToggle();
+        //     });
+        // });
+
+        // animate()
+        $(document).ready(function(){
+            $("#btn2").click(function(){
+                $("#div2").animate({
+                    left: '250px',
+                    width: '200px',
+                    height: '200px'
+                });
+                $("#div2").animate({
+                    left: '0px',
+                    width: '100px',
+                    height: '100px'
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>

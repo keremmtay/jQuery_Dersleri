@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn1">append</button>
+    <button id="btn2">prepend</button>
+    <button id="btn3">Remove</button>
+    <button id="btn4">Empty</button>
+    
+    <div id="div1" style="background-color: yellow; height: 200px;">
+        Div1
+        <h1 id="baslik1">Network Akademi</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi a numquam quisquam earum vero odio eligendi veritatis fuga ex repudiandae.
+    </div>
+
+    <div id="div2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fuga inventore tenetur! Static olarak var olan kodlar.....
+    </div>
+
+    
+
+
+    <script>
+
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+
+                // append("eklenecek string veri"); sona ekliyor
+
+                $("#div2").append(" Daha sonradan ekleyeceğimiz text........Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>Quia, quidem minus!</b>  Praesentium iusto reiciendis accusantiadipisicing elit. Aut fugit");
+            });
+
+            $("#btn2").click(function(){
+
+                // prepend("eklenecek string veri");    başa ekliyor
+
+                $("#div2").prepend("Daha sonradan ekleyeceğimiz text........Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>Quia, quidem minus!</b>  Praesentium iusto reiciendis accusantiadipisicing elit.  Aut fugit");
+            });
+
+            $("#btn3").click(function(){
+
+                // remove()
+
+                $("#div1").remove();
+            });
+            $("#btn4").click(function(){
+
+                // empty()
+
+                $("#div1").empty();
+            });
+        });
+
+    </script>
+
+</body>
+</html>
